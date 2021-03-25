@@ -5,8 +5,8 @@ class Formatter {
     return String.charAt(0).toUpperCase() + String.slice(1)
   }
   
-  static sanitize(String) {
-    
+  static sanitize(string){
+    return string.replace(/[^A-Za-z0-9 '-]/g, '')
   }
   
   static titleize(String) {
@@ -20,6 +20,6 @@ class Formatter {
         return x
       }
     }).join(" "))
-  };
   }
+
 }
