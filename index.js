@@ -10,9 +10,10 @@ class Formatter {
   }
   
   static titleize(String) {
+    lowercaseLetters = ["the", "a", "an", "but", "for", "at", "by" , "from", "and" , "of"]
+    
     return Formatter.capitalize(String.split(" ").map(function(x) {
-      if (x != ("the" || "a" || "an" ||"but" ||  "for" || "at"|| "by" || "from" || "and" || "of"))
-      {
+      if (x.!include(lowercaseLetters)
         return Formatter.capitalize(x)
       }
       else
