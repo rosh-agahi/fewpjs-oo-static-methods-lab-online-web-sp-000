@@ -17,7 +17,7 @@ class Formatter {
       }
       else
       {
-        return x
+        return x.charAt(0).toLowerCase() + x.slice(1)
       }
     }).join(" "))
   }
