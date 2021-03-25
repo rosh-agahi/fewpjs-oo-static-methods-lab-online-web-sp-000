@@ -10,7 +10,7 @@ class Formatter {
   }
   
   static titleize(String) {
-    Formatter.capitalize(String.split(" ").map(function(x) {
+    return Formatter.capitalize(String.split(" ").map(function(x) {
       if (x != ("the" || "a" || "an" ||"but" ||  "for" || "at"|| "by" || "from" || "and" || "of"))
       {
         return Formatter.capitalize(x)
