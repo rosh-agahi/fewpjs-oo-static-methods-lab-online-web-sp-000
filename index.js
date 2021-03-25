@@ -14,10 +14,10 @@ class Formatter {
     
     return Formatter.capitalize(String.split(" ").map(function(x) {
       if (lowercaseLetters.include(x) {
-        return Formatter.capitalize(x)
+        return x
       }
       else {
-        return x;
+        return Formatter.capitalize(x);
       }
     }).join(" "))
   }
