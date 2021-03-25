@@ -12,7 +12,7 @@ class Formatter {
   static titleize(String) {
     return Formatter.capitalize(String.split(" ").map(function(x) {
      let lowercaseLetters = ["the", "a", "an", "but", "for", "at", "by" , "from", "and" , "of"];
-      if (lowercaseLetters.include?(x) ){
+      if (lowercaseLetters.includes(x) ){
         return x
       }
       else {
